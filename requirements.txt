@@ -1,0 +1,46 @@
+# ── Vision & AI ───────────────────────────────────────────────────
+openai>=1.30.0              # VLM client (compatible with vLLM API)
+Pillow>=10.0.0              # Image processing
+mss>=9.0.0                  # Fast screen capture
+transformers>=4.40.0        # HuggingFace models (OmniParser, DINO)
+torch>=2.2.0                # PyTorch (DINO, SAM2)
+torchvision>=0.17.0
+
+# ── Agent Orchestration ───────────────────────────────────────────
+langgraph>=0.1.0            # Agent FSM
+langchain>=0.2.0            # LLM tooling
+langchain-openai>=0.1.0     # OpenAI-compatible client
+
+# ── Interaction / Recording ───────────────────────────────────────
+pynput>=1.7.6               # Keyboard/mouse capture
+pywinauto>=0.6.8            # Windows GUI automation
+pyautogui>=0.9.54           # Cross-platform GUI automation
+playwright>=1.44.0          # Web automation
+
+# ── Storage ───────────────────────────────────────────────────────
+psycopg2-binary>=2.9.9      # PostgreSQL
+redis>=5.0.0                # Redis
+minio>=7.2.0                # MinIO / S3
+qdrant-client>=1.9.0        # Qdrant vector DB
+
+# ── Observability ─────────────────────────────────────────────────
+langfuse>=2.0.0             # LLM tracing
+prometheus-client>=0.20.0   # Metrics
+opentelemetry-api>=1.24.0
+opentelemetry-sdk>=1.24.0
+
+# ── Security ──────────────────────────────────────────────────────
+hvac>=2.0.0                 # HashiCorp Vault client
+python-jose>=3.3.0          # JWT (Keycloak tokens)
+
+# ── Utilities ─────────────────────────────────────────────────────
+python-dotenv>=1.0.0        # .env loading
+pydantic>=2.7.0             # Data validation
+structlog>=24.0.0           # Structured logging
+tenacity>=8.3.0             # Retry logic
+rich>=13.7.0                # Terminal output
+
+# ── Testing ───────────────────────────────────────────────────────
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+pytest-cov>=5.0.0
